@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+.bg{
+    background-color: whitesmoke;
+    width: 100%;
+    height: 700px;
+}
+.content{
+    background-color:rgb(245, 238, 238);
+    width: 90%;
+    height: 500px;
+    position: absolute;
+    top: 54px;
+    left: 5%;
+    border-radius: 40px;
+    box-shadow: 10px 10px 15px 15px rgba(0, 0, 0, 0.30);
+}
+.img{
+    width: 100%;
+    height: 700px;
+    position: absolute;
+    bottom: 0px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+.text{
+    color: rgb(0, 0, 0);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 6rem;
+    font-weight: 700;
+    margin-left: 40%;
+    margin-top: 69px;
+    text-shadow: 10px 10px 20px rgba(0, 0, 0, 0.598);
+}
+
+.img2{
+    width: 100%;
+    height: 600px;
+    position: absolute;
+    bottom: -70px;
+}
+
+.box{
+    height: 400px;
+    width: 70px;
+    position: absolute;
+    right: 25px;
+    top: 10px;
+}
+
+.hover{
+    height: 800px;
+    width: 220px;
+    position: absolute;
+    top: -60px;
+    right: 100px;
+    background-color:transparent;
+}
+.round1{
+    background-image: url(ajj.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 65px;
+    width: 65px;
+    border-radius: 50%;
+    background-color: black;
+    margin: 10px;
+    color: transparent;
+}
+
+.round2{
+    background-image: url(ajj.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 65px;
+    width: 65px;
+    border-radius: 50%;
+    background-color: black;
+    margin: 10px;
+    color: transparent;
+}
+
+.round3{
+    background-image: url(ajj.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 65px;
+    width: 65px;
+    border-radius: 50%;
+    background-color: black;
+    margin: 10px;
+    color: transparent;
+}
+.round4{
+    background-image: url(ajj.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 65px;
+    width: 65px;
+    border-radius: 50%;
+    background-color: black;
+    margin: 10px;
+    color: transparent;
+}
+
+.round5{
+    background-image: url(ajj.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 65px;
+    width: 65px;
+    border-radius: 50%;
+    background-color: black;
+    margin: 10px;
+    color: transparent;
+}
+
+.round6{
+    background-image: url(ajj.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 65px;
+    width: 65px;
+    border-radius: 50%;
+    background-color: black;
+    margin: 10px;
+    color: transparent;
+}
+
+.round1:hover{
+    scale: 110%;
+    color: rgb(0, 0, 0);
+    
+}
+
+.round2:hover{
+    scale: 110%;
+    color: rgb(0, 0, 0);
+}
+
+.round3:hover{
+    scale: 110%;
+    color: rgb(0, 0, 0);
+}
+
+.round4:hover{
+    scale: 110%;
+    color: rgb(0, 0, 0);
+}
+
+.round5:hover{
+    scale: 110%;
+    color: rgb(0, 0, 0);
+}
+
+.round6:hover{
+    scale: 110%;
+    color: rgb(0, 0, 0);
+}
+
+.text1{
+    font-size: medium;
+    position: absolute;
+    right: 100px;
+    top: 90px;
+}
+
+.text2{
+    font-size: medium;
+    position: absolute;
+    right: 100px;
+    top: 21px;
+}
+
+.text3{
+    font-size: medium;
+    position: absolute;
+    right: 100px;
+    top: -48px;
+}
+
+.text4{
+    font-size: medium;
+    position: absolute;
+    right: 100px;
+    top: -117px;
+}
+
+.text5{
+    font-size: medium;
+    position: absolute;
+    right: 100px;
+    top: -186px;
+}
+
+.text6{
+    font-size: medium;
+    position: absolute;
+    right: 100px;
+    top: -255px;
+}
+
+.line1{
+    height: 260px;
+    width: 5px;
+    background-color:transparent;
+    border-radius: 5px;
+    position: absolute;
+    right: 110px;
+    top: -18px;
+}
+
+.line1{
+    height: 260px;
+    width: 5px;
+    background-color: transparent;
+    border-radius: 5px;
+    position: absolute;
+    right: 110px;
+    top: -18px;
+}
+
+.line1{
+    height: 260px;
+    width: 5px;
+    background-color: transparent;
+    border-radius: 5px;
+    position: absolute;
+    right: 110px;
+    top: -18px;
+}
+
+.line1{
+    height: 260px;
+    width: 5px;
+    background-color:transparent;
+    border-radius: 5px;
+    position: absolute;
+    right: 110px;
+    top: -18px;
+}
+
+.line1{
+    height: 260px;
+    width: 5px;
+    background-color:transparent ;
+    border-radius: 5px;
+    position: absolute;
+    right: 110px;
+    top: -18px;
+}
+
+.line1{
+    height: 260px;
+    width: 5px;
+    background-color:transparent ;
+    border-radius: 5px;
+    position: absolute;
+    right: 110px;
+    top: -18px;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+}
+
+/* waterdrop */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,800;0,900;1,600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background: #eef0f4;
+}
+
+.container{
+    position: absolute;
+    top: 200px;
+    left: -20px;
+    height: 60vh;
+    width: 60vw;
+    background-color: transparent;
+    gap: 50px;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 0 60px;
+}
+
+.cards .card{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    box-shadow: inset 20px 20px 20px rgba(0, 0, 0, 0.05),
+    25px 35px 20px rgba(0, 0, 0, 0.05),
+    25px 30px 30px rgba(0, 0, 0, 0.05),
+    inset -10px -10px 15px rgba(233, 249, 255, 0.9),
+    10px 10px 20px rgba(237, 248, 250, 0.9);
+    transition: all 0.5s ease;
+    
+}
+
+.cards .card:hover{
+    border-radius: 51% 49% 65% 35% / 65% 61% 39% 35% ;
+}
+
+.cards .card::before{
+    position: absolute;
+    content: '';
+    background: transparent;
+    width: 30px;
+    height: 30px;
+    top: 15%;
+    left: 25%;
+    box-shadow: rgb(204, 219, 232) 2px 2px 2px 0px inset,
+    rgba(255, 255, 255, 0.5) -2px -2px 3px 1px inset,
+    rgb(204, 219, 232) 2px 2px 2px 0px;
+    border-radius: 50%;
+    opacity: 0.9;
+}
+
+.cards .card::after{
+    position: absolute;
+    content: '';
+    background: transparent;
+    width: 15px;
+    height: 15px;
+    top: 25%;
+    left: 32%;
+    box-shadow: rgb(204, 219, 232) 2px 2px 2px 0px inset,
+    rgba(255, 255, 255, 0.5) -2px -2px 3px 1px inset,
+    rgb(204, 219, 232) 2px 2px 2px 0px;
+    border-radius: 50%;
+    opacity: 0.8;
+}
+
+
+.card:nth-child(1){
+    border-radius: 53% 47% 37% 63% / 41% 41% 59% 59%  ;
+}
+
+.card:nth-child(2){
+    border-radius: 71% 29% 37% 63% / 41% 51% 49% 59% ;
+}
+
+.cards .card .card__content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    gap: 10px;
+}
+
+.cards .card-1 .card__content h2{
+    margin-top: 2.5rem;
+    color: #fb6f92;
+    font-size: 2.5rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-shadow: 0 3.36px 1.896px #c4b59d,0 -2px 1px #fff;
+}
+
+.cards .card-1 .card__content span{
+    position: absolute;
+    color: #fb6f92;
+    top: 10%;
+    left: 65%;
+    font-size: 4rem;
+    pointer-events: none;
+    font-weight: 800;
+    opacity: 0.5;
+}
+
+.cards .card-1 .card__content p{
+    font-size: 1.4rem;
+    width: 200px;
+    color: #707070;
+}
+
+.cards .card-1 .card__content button{
+    padding: 0.5rem 0.8rem;
+    text-align: center;
+    font-size: 1.4rem;
+    border: 1px solid #fb6f92;
+    color: #fb6f92;
+    cursor: pointer;
+    border-radius: 15px;
+    transition: all 0.4s ease;
+}
+
+button:hover{
+    scale: 105%;
+}
+
+
+
+</style>
+<body>
+    <div class="bg">
+        <div class="content">
+            <h1 class="text">SKILLS</h1>
+            <img class="img" src="images (1).png" alt="">
+            <img class="img2" src="1-white-clouds-png-image.png" alt="">
+            <div class="box">
+                <div class="round1">
+                    <div class="text1"><ul>
+                        <div class="line1"></div>
+                        <li><b>WAREHOUSE MANAGEMENT SYSTEMS</b></li>
+                        <li>AAJ ENTERPRISES</li><br/>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, ducimus.</p>
+                    </ul></div>
+                </div>
+                <div class="round2">
+                    <div class="text2"><ul>
+                        <div class="line2"></div>
+                        <li><b>TEAM LEADERSHIP</b></li>
+                        <li>AAJ ENTERPRISES</li><br/>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, ducimus.</p>
+                    </ul></div>
+                </div>
+                <div class="round3">
+                    <div class="text3"><ul>
+                        <div class="line3"></div>
+                        <li><b>TEAMWORK</b></li>
+                        <li>AAJ ENTERPRISES</li><br/>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, ducimus.</p>
+                    </ul></div>
+                </div>
+                <div class="round4">
+                    <div class="text4"><ul>
+                        <div class="line4"></div>
+                        <li><b>TIME MANAGEMENT</b></li>
+                        <li>AAJ ENTERPRISES</li><br/>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, ducimus.</p>
+                    </ul></div>
+                </div>
+                <div class="round5">
+                    <div class="text5"><ul>
+                        <div class="line5"></div>
+                        <li><b>OPERATIONS MANAGEMENT</b></li>
+                        <li>AAJ ENTERPRISES</li><br/>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, ducimus.</p>
+                    </ul></div>
+                </div>
+                <div class="round6">
+                    <div class="text6"><ul>
+                        <div class="line6"></div>
+                        <li><b>PROBLEM SOLVING</b></li>
+                        <li>AAJ ENTERPRISES</li><br/>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, ducimus.</p>
+                    </ul></div>
+                </div>
+            </div>
+            <div class="hover"></div>
+        </div>
+        <div class="container">
+            <div class="cards">
+                <div class="card card-1">
+                    <div class="card__content">
+                    <span>01</span>
+                    <h2>SOUVIK</h2>
+                    <p>Talent you have naturally. Skill is only developed by hours and hours and hours of beating on your craft.</p>
+                    <a href="https://www.linkedin.com/in/souvik-karmakar-0a9403228"><button type="submit">See more</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

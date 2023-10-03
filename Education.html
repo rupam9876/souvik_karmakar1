@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto Slab', serif;
+}
+
+:root{
+    font-size: 62.5%;
+}
+ul li{
+    list-style: none;
+}
+a{
+    font-size: 1.7rem;
+    text-decoration: none;
+}
+
+.container{
+    max-width: 1200px;
+    width: 90%;
+    margin: 0% auto;
+}
+/* ##################### HEADER STYLING ###################### */
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background: #f0e6ef;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    padding: 1% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a h2{
+    font-size: 2rem;
+    font-weight: 600;
+    color: #edafb8;
+    text-shadow: 0 3.36px 8.896px #c4b59d,0 -2px 1px #fff; 
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    color: #edafb8; 
+    letter-spacing: 0.1em;
+    font-weight: 500;
+    text-shadow: 0 .36px 4.896px #c4b59d,0 -2px 1px #fff; 
+}
+
+.nav-links ul li::after{
+    content: '';
+    width:0%;
+    height: 3px;
+    background: #e5989b;
+    display: block;
+    margin: auto;
+    transition: 0.5s ease-in-out;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+
+/* ####################################### main Styling ####################### */
+
+.main{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+img{
+    position: absolute;
+    width: 600px;
+    height: auto;
+    object-fit: cover;
+    animation: anim 3s forwards;
+    top: 73px;
+    transition: 0.5s;
+}
+
+img:hover{
+    scale: 105%;
+}
+
+@keyframes anim{
+    from{
+        left: -100%;
+        filter: blur(5px)
+        opacity(0.5)
+    }
+    to{
+        left: 5%;
+        filter: blur(0);
+        opacity: 1;
+    }
+}
+
+.text{
+    overflow: hidden;
+    padding: 0 2rem;
+    position: absolute;
+    width: 700px;
+    top: 100px;
+    right: 5%;
+    animation: anim2 3s forwards;
+}
+
+@keyframes anim2{
+    from{
+        right: -100%;
+        opacity:(0.5);
+    }
+    to{
+        right: 10%;
+        opacity: 1;
+    }
+}
+
+.text h1{
+    font-size: 5rem;
+    font-weight: 900;
+    letter-spacing: 0.1em;
+    color: #1b263b;
+    text-shadow: 0 3.36px 8.896px #9da5c4,0 -2px 1px rgb(186, 203, 251); 
+}
+
+.text p{
+    font-size: 1.8rem;
+    margin-top: 1rem;
+    font-weight: 300;
+    line-height: 1.7;
+    color: #415a77;
+}
+
+.btn{
+    padding: 1rem 7rem;
+    border: 2px solid #edafb8;
+    border-radius: 10px;
+    margin-top: 2rem;
+    text-align: center;
+    background: transparent;
+    font-size: 1.8rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: #e5989b;
+    transition: 0.3s;
+    text-shadow: 0 3.36px 8.896px #c4b59d,0 -2px 1px #fff; 
+}
+
+.btn:hover{
+    scale: 105%;
+    background: #e5989b;
+    color: #f5f5f5;
+    outline: none;
+    text-shadow: none;
+    border: none;
+}
+
+span{
+    color: #e5989b;
+    text-shadow: 0 3.36px 8.896px #c4b59d,0 -2px 1px #fff; 
+    font-size: 5.5rem;
+}
+
+.box{
+    background-color: #f0e6ef;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    border-radius: 20px;
+    border: solid 2px red;
+    box-shadow: 10px 5px 30px rgba(0, 0, 0, 0.30);
+}
+
+
+.clg1{
+    background-color: #edafb8;
+    width: 95%;
+    height: 200px;
+    color: white;
+    text-align: center;
+    border-radius: 15px;
+    margin: 5px;
+    margin-top: 45px;
+    border: #1b263b solid 2px;
+    box-shadow: 5px 5px 10px 10px rgba(0, 0, 0, 0.30);
+}
+
+.clg2{
+    background-color: #edafb8;
+    width: 95%;
+    height: 200px;
+    color: white;
+    text-align: center;
+    border-radius: 15px;
+    margin: 5px;
+    margin-top: 45px;
+    border: #1b263b solid 2px;
+    box-shadow: 5px 5px 10px 10px rgba(0, 0, 0, 0.30);
+}
+
+</style>
+<body>
+    <section class="header">
+        <nav>
+            <a href="home.html"> <h2>SOUVIK KARMAKAR</h2></a>
+            <div class="nav-links container" id="navLinks">
+                <ul>
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="experience.html">EXPERIENCE</a></li>
+                    <li><a href="skills.html">SKILLS</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+        </nav>
+        <main class="main">
+            <div class="img">
+                <img src="20230929_143114.png" alt="">
+            </div>
+            <div class="text">
+                <h1> <span>EDUCA</span>TION</h1></span>
+                <div class="box">
+                    <div class="clg1">
+                        <h1>Utkal University</h1>
+                        <p>Bachelor of Arts - BA, Economics Honours Apr 2018 - Mar 2021</p>
+                    </div>
+                    <div class="clg2">
+                        <h1>CIEM</h1>
+                        <p>Master of Business Administration - MBA, Marketing Jun 2021-Apr 2023</p>
+                    </div>
+                </div>
+                <a href="https://www.linkedin.com/in/souvik-karmakar-0a9403228">
+                <button class="btn">Linkedin</button></a>
+            </div>
+        </main>
+        
+    </section>
+</body>
+</html>
